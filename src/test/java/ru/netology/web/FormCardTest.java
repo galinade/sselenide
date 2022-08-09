@@ -40,17 +40,10 @@ public class FormCardTest {
         $x("//button[contains(@class, 'button_view_extra')]").click();
         $("[data-test-id=notification]").shouldBe(visible, Duration.ofSeconds(15));
         $("[data-test-id=notification] [class='notification__content']").shouldHave(exactText("Встреча успешно забронирована на 12.08.2022"));
-        //$("[data-test-id=notification] [class='notification__title'] Element not found {by text: Успешно!Встреча успешно забронирована на 11.08.2022").shouldHave(exactText("Успешно!"+"Встреча успешно забронирована на " + generateDate(11)));
-        //$("[data-test-id=notification] Element not found {by text: Успешно!Встреча успешно забронирована на 11.08.2022").shouldHave(exactText("Встреча успешно забронирована на " + generateDate(11)));
-        // $(byText("Успешно!Встреча успешно забронирована на 11.08.2022")).shouldBe(visible,Duration.ofSeconds(10));
+
     }
 }
 
 
 
-
-
-
-
-       // [class='notification__title'] [class='notification__content']
 
